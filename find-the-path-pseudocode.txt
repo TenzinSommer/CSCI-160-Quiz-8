@@ -1,0 +1,35 @@
+public static List<Integer> shortestPath(List<List<Integer>> a, List<List<Integer>> queries) {
+    // Write your code here
+        
+        // 2 things to prioritize: finding the shortest path and finding the path
+        // with the most zeroes and lowest numbers
+        // keep track of distance between one point and another as a float
+        // try and lower the float with movement to next cell
+        // if the jump in weight is too high then don't take that path
+        // only move in 4 cardinal directions and not diagonally
+        // go through all possible paths like a tree
+        // compare lengths and weights of all possible paths
+        // pick the path with the least weight first, if there are several,
+        // pick the path with the shortest length too
+        
+        // make a queue to store path weights
+        // initialize variable to hold weight
+        // check how many options for different paths there are on the current cell
+        // pick path at random and mark previous cell as visited
+        // pick next cell by choosing cell with lowest weight out of all adjacent
+        // and unmarked
+        // keep going until current cell is goal cell
+        // save path weight in queue
+        // do this again until all cells are marked as visited
+        // then sort all path weights in ascending order by adding them to a new
+        // array and then sorting the array
+        // then return the first item in the sorted array, it should be the
+        // lowest weight
+        
+        // time complexity is q(n * m) + (q * p)^2, where q is the number of 
+        // queries, p is number of paths in each query, and n and m are
+        // dimensions of the table. q(n * m) is for going through every cell
+        // in the table q times, and (q * p)^2 is for making an array and then
+        // sorting the array.
+        
+    }
