@@ -1,0 +1,48 @@
+public static void staircase(int n) {
+    // Write your code here
+        
+        // make ' ' a char and '#' a char
+        // then a for loop where a line is printed with a decreasing number of 
+        // spaces and an increasing number of hashtags
+        
+        // time complexity is n^2 because the outside for loop goes through
+        // n times, and the inside for loops go through for a total of n times
+        // as well
+        
+        // space complexity is 3 initialized variables, which is 3 * 4 bytes,
+        // which is 12 bytes total
+        
+        // int number = n;
+        // char[][] charArray = new char[number - 1][number - 1];
+        // char space = ' ';
+        // char hashtag = '#';
+        
+        // for (int i = 0; i < number; i++) {
+        //     for (int j = 0; j < number; j++) {
+        //         if (i != (number)) {
+        //             charArray[i][j] = space;
+        //         }
+        //         else {
+        //             charArray[i][j] = hashtag;
+        //         }
+        //     }
+        //     System.out.println(((charArray)[i]).toString());
+        // }
+        
+        int number = n;
+        
+        for (int i = 0; i < number; i++) {
+            
+            for (int j = (number - i); j > 1; j--) {
+                System.out.print(' ');
+            }
+            
+            for (int k = 0; k <= i; k++) {
+                System.out.print('#');
+            }
+            
+            System.out.println();
+        }
+        
+        
+    }
